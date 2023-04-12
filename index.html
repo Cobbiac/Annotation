@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Audio Notes</h1>
+</header>
+
+<main>
+    <div class="container">
+        <input type="file" id="audioFile" accept="audio/*">
+        <input type="url" id="audioUrl" placeholder="Enter URL">
+        <button id="loadUrl">Load URL</button>
+        <audio id="audioPlayer" controls></audio>
+        <button id="pausePlay">Pause/Play</button>
+        <button id="addTimestamp">Add Timestamp</button>
+        <table id="notesTable">
+            <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Note</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <button id="saveNotes">Save Notes</button>
+        <input type="file" id="loadNotes" accept=".csv">
+
+        <button id="help">Help</button>
+        <div class="instructions" hidden>
+            <!-- Add instructions here -->
+        </div>
+
+        <button id="retroStyle">Retro Style</button>
+    </div>
+</main>
+
+<script src="scripts.js"></script>
+</body>
+</html>
