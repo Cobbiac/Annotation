@@ -62,3 +62,19 @@ button {
 #notesTable td:nth-child(2) {
     width: 90%;
 }
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .audio-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    width: 100%;
+  }
+  
+  #pausePlay, #addTimestamp {
+    flex-grow: 1;
+    margin-right: 1em;
+  }
